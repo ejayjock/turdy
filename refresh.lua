@@ -3,7 +3,7 @@ Lucia Edit
 Script cleans all local files and syncs with github repository]]--
 
 local gUser = "ejayjock"
-local gRepo = "turtle-timmy"
+local gRepo = "turtle-turdy"
 local gBranch = "master"
 local gPath=""
 
