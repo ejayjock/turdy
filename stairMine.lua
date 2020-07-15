@@ -37,7 +37,7 @@ for i=1,5 do
     --turtle.dig()
     cont=true
     while cont do
-      if turtle.detectUp() then
+      if turtle.detect() then
         turtle.dig()
       else
         cont=false
