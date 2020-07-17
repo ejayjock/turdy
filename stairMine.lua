@@ -21,14 +21,6 @@ function clearUp()
   end
 end
 
-for i=1,5 do
-  clearUp()
-  turtle.up()
-  clearUp()
-  turtle.down()
-  turtle.digDown()
-  turtle.down()
-  --turtle.dig()
 function clear()
   cont=true
   while cont do
@@ -38,5 +30,13 @@ function clear()
       cont=false
     end
   end
-  turtle.forward()
 end
+
+for i=1,5 do
+  clearUp()
+  turtle.up()
+  clearUp()
+  turtle.down()
+  turtle.digDown()
+  turtle.down()
+  --turtle.dig()
