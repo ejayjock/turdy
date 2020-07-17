@@ -21,22 +21,21 @@ function clearUp()
   end
 end
 
-turtle.up()
---turtle.digUp()
-clearUp()
-
-turtle.down()
-turtle.digDown()
-turtle.down()
---turtle.dig()
-cont=true
-while cont do
-  if turtle.detect() then
-    turtle.dig()
-  else
-    cont=false
+for i=1,5 do
+  clearUp()
+  turtle.up()
+  clearUp()
+  turtle.down()
+  turtle.digDown()
+  turtle.down()
+  --turtle.dig()
+  cont=true
+  while cont do
+    if turtle.detect() then
+      turtle.dig()
+    else
+      cont=false
+    end
   end
-end
-turtle.forward()
-
+  turtle.forward()
 end
