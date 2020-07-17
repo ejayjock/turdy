@@ -11,37 +11,38 @@ Series of turtle commands:
 
 
 function clearUp()
-    cont=true
-    while cont do
-      if turtle.detectUp() then
-        turtle.digUp()
-      else
-        cont=false
-      end
+  cont=true
+  while cont do
+    if turtle.detectUp() then
+      turtle.digUp()
+    else
+      cont=false
     end
   end
+end
 
-    turtle.up()
-    --turtle.digUp()
-    cont=true
-    while cont do
-      if turtle.detectUp() then
-        turtle.digUp()
-      else
-        cont=false
-      end
-    end
-    turtle.down()
-    turtle.digDown()
-    turtle.down()
-    --turtle.dig()
-    cont=true
-    while cont do
-      if turtle.detect() then
-        turtle.dig()
-      else
-        cont=false
-      end
-    end
-    turtle.forward()
+turtle.up()
+--turtle.digUp()
+cont=true
+while cont do
+  if turtle.detectUp() then
+    turtle.digUp()
+  else
+    cont=false
+  end
+end
+turtle.down()
+turtle.digDown()
+turtle.down()
+--turtle.dig()
+cont=true
+while cont do
+  if turtle.detect() then
+    turtle.dig()
+  else
+    cont=false
+  end
+end
+turtle.forward()
+
 end
