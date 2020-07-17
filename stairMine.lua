@@ -23,14 +23,8 @@ end
 
 turtle.up()
 --turtle.digUp()
-cont=true
-while cont do
-  if turtle.detectUp() then
-    turtle.digUp()
-  else
-    cont=false
-  end
-end
+clearUp()
+
 turtle.down()
 turtle.digDown()
 turtle.down()
