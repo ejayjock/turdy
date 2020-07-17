@@ -39,4 +39,6 @@ for i=1,5 do
   turtle.down()
   turtle.digDown()
   turtle.down()
-  --turtle.dig()
+  clear()
+  turtle.forward()
+end
