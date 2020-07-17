@@ -29,6 +29,7 @@ for i=1,5 do
   turtle.digDown()
   turtle.down()
   --turtle.dig()
+function clear()
   cont=true
   while cont do
     if turtle.detect() then
