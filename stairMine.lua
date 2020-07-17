@@ -10,8 +10,7 @@ Series of turtle commands:
   - move forward ]]
 
 
-for i=1,5 do
-    --turtle.digUp()
+function clearUp()
     cont=true
     while cont do
       if turtle.detectUp() then
@@ -20,6 +19,7 @@ for i=1,5 do
         cont=false
       end
     end
+  end
 
     turtle.up()
     --turtle.digUp()
