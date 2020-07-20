@@ -6,6 +6,7 @@ Series of turtle commands:
   - Move down
   - dig down
   - move down
+
   - dig Forward
   - move forward ]]
 
@@ -39,6 +40,10 @@ for i=1,5 do
   turtle.down()
   turtle.digDown()
   turtle.down()
+  if not turtle.detectDown() then
+    turtle.select(1)
+    turtle.placeDown()
+  end
   clear()
   turtle.forward()
 end
