@@ -10,6 +10,9 @@ Series of turtle commands:
   - dig Forward
   - move forward ]]
 
+print("how deep?")
+vDeep=io.read()
+vDeep=tonumber(vDeep)
 
 function clearUp()
   cont=true
