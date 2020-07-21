@@ -48,7 +48,7 @@ end
 function FillLeft(slot)
   turtle.turnLeft()
   if not turtle.detect() then
-    turtle.placeDown()
+    turtle.place()
   end
   turtle.turnRight()
 end
@@ -56,7 +56,7 @@ end
 function FillRight(slot)
   turtle.turnRight()
   if not turtle.detect() then
-    turtle.placeDown()
+    turtle.place()
   end
   turtle.turnLeft()
 end
