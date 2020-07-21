@@ -11,8 +11,10 @@ Series of turtle commands:
   - move forward ]]
 
 print("how deep?")
-vDeep=io.read()
-vDeep=tonumber(vDeep)
+vDeep=tonumber(io.read())
+
+print("What slot is the fill material in?")
+nSlot=tonumber(io.read())
 
 function clearUp()
   cont=true
@@ -36,9 +38,9 @@ function clear()
   end
 end
 
-function FillDown()
+function FillDown(slot)
   if not turtle.detectDown() then
-    turtle.select(1)
+    turtle.select(slot)
     turtle.placeDown()
   end
 end
@@ -50,7 +52,7 @@ for i=1,20 do
   turtle.down()
   turtle.digDown()
   turtle.down()
-  FillDown()
+  FillDown(slot)
   clear()
   turtle.forward()
 end
