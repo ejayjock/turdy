@@ -45,7 +45,7 @@ function FillDown(slot)
   end
 end
 
-for i=1,20 do
+for i=1,vDeep do
   clearUp()
   turtle.up()
   clearUp()
