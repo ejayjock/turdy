@@ -45,20 +45,20 @@ function FillDown(slot)
   end
 end
 
-function FillLeft()
+function FillLeft(slot)
   turtle.turnLeft()
   if not turtle.detect() then
     turtle.placeDown()
-    turtle.turnRight()
   end
+  turtle.turnRight()
 end
 
-function FillRight()
+function FillRight(slot)
   turtle.turnRight()
   if not turtle.detect() then
     turtle.placeDown()
-    turtle.turnLeft()
   end
+  turtle.turnLeft()
 end
 
 for i=1,vDeep do
