@@ -45,6 +45,22 @@ function FillDown(slot)
   end
 end
 
+function FillLeft()
+  turtle.turnLeft()
+  if not turtle.detect() then
+    turtle.placeDown()
+    turtle.turnRight()
+  end
+end
+
+function FillRight()
+  turtle.turnRight()
+  if not turtle.detect() then
+    turtle.placeDown()
+    turtle.turnLeft()
+  end
+end
+
 for i=1,vDeep do
   clearUp()
   turtle.up()
@@ -53,6 +69,8 @@ for i=1,vDeep do
   turtle.digDown()
   turtle.down()
   FillDown(slot)
+  FillLeft()
+  FillRight()
   clear()
   turtle.forward()
 end
