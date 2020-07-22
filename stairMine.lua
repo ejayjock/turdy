@@ -61,6 +61,19 @@ function FillRight(slot)
   turtle.turnLeft()
 end
 
+function selectItem(name)
+  -- check all inventory slots
+  local item
+  for slot = 1, 16 do
+    item = turtle.getItemDetail(slot)
+    if item ~= nil and item['name'] == name then
+      turtle.select(slot)
+      return true
+    end
+  end
+  return false  -- couldn't find item
+end
+
 for i=1,vDeep do
   clearUp()
   turtle.up()
