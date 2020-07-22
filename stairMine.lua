@@ -87,7 +87,7 @@ for i=1,vDeep do
   FillDown(nSlot)
   FillLeft(nSlot)
   FillRight(nSlot)
-  if tSpace == 0 then
+  if tSpace == 1 then
     placeTorch(tSlot)
     tSpace=3
   end
