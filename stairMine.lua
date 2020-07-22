@@ -84,9 +84,9 @@ for i=1,vDeep do
   turtle.digDown()
   turtle.down()
   FillDown(nSlot)
-  FillLeft()
-  FillRight()
-  placeTorch()
+  FillLeft(nSlot)
+  FillRight(nSlot)
+  placeTorch(tSlot)
   clear()
   turtle.forward()
 end
