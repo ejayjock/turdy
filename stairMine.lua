@@ -53,6 +53,7 @@ end
 function FillLeft(slot)
   turtle.turnLeft()
   if not turtle.detect() then
+    turtle.select(slot)
     turtle.place()
   end
   turtle.turnRight()
@@ -61,14 +62,17 @@ end
 function FillRight(slot)
   turtle.turnRight()
   if not turtle.detect() then
+    turtle.select(slot)
     turtle.place()
   end
   turtle.turnLeft()
 end
 
 function placeTorch(torchSlot)
-  
-
+  turtle.turnLeft()
+  turtle.select(torchSlot)
+  turtle.place()
+  turtle.turnRight()
 end
 
 for i=1,vDeep do
