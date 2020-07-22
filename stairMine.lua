@@ -76,6 +76,7 @@ function placeTorch(torchSlot)
   turtle.turnRight()
 end
 
+local tSpace=3
 for i=1,vDeep do
   clearUp()
   turtle.up()
@@ -86,7 +87,10 @@ for i=1,vDeep do
   FillDown(nSlot)
   FillLeft()
   FillRight()
-  placeTorch()
+  if tSpace == ? then
+    placeTorch()
+    tSpace=tSpace-1
+  end
   clear()
   turtle.forward()
 end
