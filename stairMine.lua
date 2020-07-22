@@ -89,8 +89,8 @@ for i=1,vDeep do
   FillRight(nSlot)
   if tSpace == ? then
     placeTorch(tSlot)
-    tSpace=tSpace-1
   end
+  tSpace=tSpace-1
   clear()
   turtle.forward()
 end
