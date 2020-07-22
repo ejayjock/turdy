@@ -70,6 +70,7 @@ end
 
 function placeTorch(torchSlot)
   turtle.turnLeft()
+  clear()
   turtle.select(torchSlot)
   turtle.place()
   turtle.turnRight()
