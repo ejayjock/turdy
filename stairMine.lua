@@ -11,13 +11,15 @@ Series of turtle commands:
   - move forward ]]
 
 print("how deep?")
-vDeep=tonumber(io.read())
+local vDeep=tonumber(io.read())
 
 print("What slot is the fill material in?")
-nSlot=tonumber(io.read())
+local nSlot=tonumber(io.read())
 
 print("What slot are the torches in?")
-tSlot=tonumber(io.read())
+local tSlot=tonumber(io.read())
+
+-- Use command  	turtle.getItemDetail([slotNum]) to get name
 
 function clearUp()
   cont=true
@@ -64,17 +66,9 @@ function FillRight(slot)
   turtle.turnLeft()
 end
 
-function selectItem(name)
-  -- check all inventory slots
-  local item
-  for slot = 1, 16 do
-    item = turtle.getItemDetail(slot)
-    if item ~= nil and item['name'] == name then
-      turtle.select(slot)
-      return true
-    end
-  end
-  return false  -- couldn't find item
+function placeTorch(torchSlot)
+  
+
 end
 
 for i=1,vDeep do
@@ -84,7 +78,7 @@ for i=1,vDeep do
   turtle.down()
   turtle.digDown()
   turtle.down()
-  FillDown(slot)
+  FillDown(nSlot)
   FillLeft()
   FillRight()
   clear()
