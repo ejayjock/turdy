@@ -16,6 +16,9 @@ vDeep=tonumber(io.read())
 print("What slot is the fill material in?")
 nSlot=tonumber(io.read())
 
+print("What slot are the torches in?")
+tSlot=tonumber(io.read())
+
 function clearUp()
   cont=true
   while cont do
