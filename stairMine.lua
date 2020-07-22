@@ -85,10 +85,10 @@ for i=1,vDeep do
   turtle.digDown()
   turtle.down()
   FillDown(nSlot)
-  FillLeft()
-  FillRight()
+  FillLeft(nSlot)
+  FillRight(nSlot)
   if tSpace == ? then
-    placeTorch()
+    placeTorch(tSlot)
     tSpace=tSpace-1
   end
   clear()
