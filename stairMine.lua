@@ -86,6 +86,7 @@ for i=1,vDeep do
   FillDown(nSlot)
   FillLeft()
   FillRight()
+  placeTorch()
   clear()
   turtle.forward()
 end
