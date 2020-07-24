@@ -76,9 +76,7 @@ function placeTorch(torchSlot)
   turtle.turnRight()
 end
 
-local nSpaces=3 -- Size of the pinwheel mine side
-
-local tSpace=nSpaces
+local tSpace=3
 for i=1,vDeep do
   clearUp()
   turtle.up()
@@ -91,7 +89,7 @@ for i=1,vDeep do
   FillRight(nSlot)
   if tSpace == 1 then
     placeTorch(tSlot)
-    tSpace=nSpaces
+    tSpace=3
   end
   tSpace=tSpace-1
   clear()
