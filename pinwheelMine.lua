@@ -1,12 +1,11 @@
 --[[ Code to be repeated to create a staircase mine
 Series of turtle commands:
-  - Dig Up
+  - Clear Up
   - Move Up
-  - Dig Up
+  - Clear Up
   - Move down
   - dig down
   - move down
-
   - dig Forward
   - move forward ]]
 
@@ -76,9 +75,7 @@ function placeTorch(torchSlot)
   turtle.turnRight()
 end
 
-local nSpaces=3 -- Size of the pinwheel mine side
-
-local tSpace=nSpaces
+local tSpace = 3
 for i=1,vDeep do
   clearUp()
   turtle.up()
@@ -91,12 +88,12 @@ for i=1,vDeep do
   FillRight(nSlot)
   if tSpace == 1 then
     placeTorch(tSlot)
-    tSpace=nSpaces
   end
-  tSpace=tSpace-1
   clear()
   turtle.forward()
-  if nSpaces == 3 then
-  turtle.turnLeft()
+  if tSpace == ? then
+      turtle.turnLeft()
+      tSpace=3
   end
+  tSpace=tSpace-1
 end
