@@ -98,4 +98,5 @@ for i=1,vDeep do
   turtle.forward()
   if nSpaces == 3 then
   turtle.turnLeft()
+  end
 end
