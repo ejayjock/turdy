@@ -96,5 +96,6 @@ for i=1,vDeep do
   tSpace=tSpace-1
   clear()
   turtle.forward()
+  if nSpaces == 2 then
   turtle.turnLeft()
 end
