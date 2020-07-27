@@ -76,6 +76,24 @@ function placeTorch(torchSlot)
   turtle.turnRight()
 end
 
+function FillRightWall(slot)
+  FillRight()
+  turtle.up()
+  FillRight()
+  turtle.up()
+  FillRight()
+  turtle.up()
+  FillRight()
+
+  function FillLeftWall(slot)
+    FillLeft()
+    turtle.down()
+    FillLeft()
+    turtle.down()
+    FillLeft()
+    turtle.down()
+    Fillleft()
+
 local tSpace=3
 for i=1,vDeep do
   clearUp()
@@ -85,8 +103,8 @@ for i=1,vDeep do
   turtle.digDown()
   turtle.down()
   FillDown(nSlot)
-  FillLeft(nSlot)
-  FillRight(nSlot)
+  FillLeftWall(nSlot)
+  FillRightWall(nSlot)
   if tSpace == 1 then
     placeTorch(tSlot)
     tSpace=3
