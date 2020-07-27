@@ -92,7 +92,7 @@ for i=1,vDeep do
   clear()
   turtle.forward()
   if tSpace == 1 then
-      turtle.turnLeft()
+      turtle.turnLeft() 
       tSpace=3
   end
   tSpace=tSpace-1
