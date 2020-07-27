@@ -93,7 +93,7 @@ function FillLeftWall(slot)
     turtle.down()
     FillLeft()
     turtle.down()
-    Fillleft()
+    FillLeft()
 end
 
 local tSpace=3
