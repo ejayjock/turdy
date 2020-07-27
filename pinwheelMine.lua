@@ -68,11 +68,11 @@ function FillRight(slot)
 end
 
 function placeTorch(torchSlot)
-  turtle.turnLeft()
+  turtle.turnRight()
   clear()
   turtle.select(torchSlot)
   turtle.place()
-  turtle.turnRight()
+  turtle.turnLeft()
 end
 
 local tSpace = 3
@@ -91,7 +91,7 @@ for i=1,vDeep do
   end
   clear()
   turtle.forward()
-  if tSpace == ? then
+  if tSpace == 1 then
       turtle.turnLeft()
       tSpace=3
   end
