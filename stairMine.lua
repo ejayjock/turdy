@@ -84,8 +84,9 @@ function FillRightWall(slot)
   FillRight()
   turtle.up()
   FillRight()
+end
 
-  function FillLeftWall(slot)
+function FillLeftWall(slot)
     FillLeft()
     turtle.down()
     FillLeft()
@@ -93,6 +94,7 @@ function FillRightWall(slot)
     FillLeft()
     turtle.down()
     Fillleft()
+end
 
 local tSpace=3
 for i=1,vDeep do
