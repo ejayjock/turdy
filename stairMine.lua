@@ -77,23 +77,23 @@ function placeTorch(torchSlot)
 end
 
 function FillRightWall(slot)
-  FillRight()
+  FillRight(slot)
   turtle.up()
-  FillRight()
+  FillRight(slot)
   turtle.up()
-  FillRight()
+  FillRight(slot)
   turtle.up()
-  FillRight()
+  FillRight(slot)
 end
 
 function FillLeftWall(slot)
-    FillLeft()
+    FillLeft(slot)
     turtle.down()
-    FillLeft()
+    FillLeft(slot)
     turtle.down()
-    FillLeft()
+    FillLeft(slot)
     turtle.down()
-    FillLeft()
+    FillLeft(slot)
 end
 
 local tSpace=3
