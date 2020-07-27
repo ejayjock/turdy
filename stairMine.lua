@@ -105,8 +105,8 @@ for i=1,vDeep do
   turtle.digDown()
   turtle.down()
   FillDown(nSlot)
-  FillLeftWall(nSlot)
   FillRightWall(nSlot)
+  FillLeftWall(nSlot)
   if tSpace == 1 then
     placeTorch(tSlot)
     tSpace=3
