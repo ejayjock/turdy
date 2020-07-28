@@ -71,6 +71,11 @@ end
 function placeTorch(torchSlot)
   turtle.turnLeft()
   clear()
+  turtle.forward()
+  if not turtle.detect() then
+    turtle.select(slot)
+    turtle.place()
+    turtle.back()
   turtle.select(torchSlot)
   turtle.place()
   turtle.turnRight()
@@ -115,3 +120,12 @@ for i=1,vDeep do
   clear()
   turtle.forward()
 end
+
+--[[
+turn left
+clear
+Forward
+detect
+if not detect then place
+back
+place torch]]
