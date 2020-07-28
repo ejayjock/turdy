@@ -69,7 +69,7 @@ function FillRight(slot)
 end
 
 function placeTorch(torchSlot)
-  turtle.turnLeft()
+  turtle.turnRight()
   clear()
   turtle.forward()
   if not turtle.detect() then
@@ -79,7 +79,7 @@ function placeTorch(torchSlot)
   end
   turtle.select(torchSlot)
   turtle.place()
-  turtle.turnRight()
+  turtle.turnLeft()
 end
 
 function FillRightWall(slot)
