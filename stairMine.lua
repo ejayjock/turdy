@@ -69,17 +69,17 @@ function FillRight(slot)
 end
 
 function placeTorch(torchSlot)
-  turtle.turnRight()
+  turtle.turnLeft()
   clear()
   turtle.forward()
   if not turtle.detect() then
     turtle.select(slot)
     turtle.place()
-    turtle.back()
   end
+  turtle.back()
   turtle.select(torchSlot)
   turtle.place()
-  turtle.turnLeft()
+  turtle.turnRight()
 end
 
 function FillRightWall(slot)
