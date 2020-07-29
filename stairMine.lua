@@ -102,6 +102,13 @@ function FillLeftWall(slot)
     FillLeft(slot)
 end
 
+function FillUp(slot)
+  if not turtle.detectUp() then
+    turtle.select(slot)
+    turtle.placeUp()
+  end
+end
+
 local tSpace=3
 for i=1,vDeep do
   clearUp()
@@ -112,6 +119,7 @@ for i=1,vDeep do
   turtle.down()
   FillDown(nSlot)
   FillRightWall(nSlot)
+  FillUp(nSlot)
   FillLeftWall(nSlot)
   if tSpace == 1 then
     placeTorch(tSlot)
@@ -121,12 +129,3 @@ for i=1,vDeep do
   clear()
   turtle.forward()
 end
-
---[[
-turn left
-clear
-Forward
-detect
-if not detect then place
-back
-place torch]]
