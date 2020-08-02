@@ -106,7 +106,7 @@ end
 
 -- turtle goes back to starting point
 turtle.turnLeft()
-for k=1,sqaresize+1 do
+for k=1,sqaresize do
   turtle.forward()
 end
 
