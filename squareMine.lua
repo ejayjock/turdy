@@ -109,7 +109,7 @@ if isodd(sqaresize) then
 end
 
 -- Fuel Check
-travelDist = 2*nDeeep + sqaresize*sqaresize + squaresize 
+travelDist = 2*nDeeep + sqaresize*sqaresize + sqaresize 
 if turtle.getFuelLevel()<travelDist then
   error('Turtle does not have enough Fuel.')
 end
