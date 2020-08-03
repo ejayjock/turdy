@@ -128,7 +128,7 @@ for j=1,sqaresize do
     clearUp()
     clear()
     turtle.digDown()
-    turtle.forward()
+    while turtle.forward()==false do end
   end
 
   if isodd(j) then
@@ -153,7 +153,7 @@ end
 -- Part 3: turtle goes back to starting point
 turtle.turnLeft()
 for k=1,sqaresize do
-  turtle.forward()
+  while turtle.forward()== false do end
 end
 
 -- Part 4: turtle goes back up.
